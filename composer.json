@@ -19,7 +19,9 @@
         "laravel/ui": "3.0",
         "laravelcollective/html": "^6.2",
         "doctrine/dbal": "~2.3",
-        "infyomlabs/generator-builder": "dev-master"
+        "infyomlabs/generator-builder": "dev-master",
+        "appointer/swaggervel": "dev-master",
+        "infyomlabs/swagger-generator": "dev-master"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
