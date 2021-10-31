@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::resource('menus', App\Http\Controllers\API\MenuAPIController::class);
+
+
+Route::resource('sliders', App\Http\Controllers\API\SliderAPIController::class);
+
+
+Route::resource('advertisements', App\Http\Controllers\API\AdvertisementAPIController::class);

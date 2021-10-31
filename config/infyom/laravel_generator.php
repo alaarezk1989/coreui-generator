@@ -31,6 +31,8 @@ return [
 
         'api_controller'    => app_path('Http/Controllers/API/'),
 
+        'api_resource'      => app_path('Http/Resources/'),
+
         'repository_test'   => base_path('tests/Repositories/'),
 
         'api_test'          => base_path('tests/APIs/'),
@@ -71,6 +73,8 @@ return [
 
         'api_controller'    => 'App\Http\Controllers\API',
 
+        'api_resource'      => 'App\Http\Resources',
+
         'request'           => 'App\Http\Requests',
 
         'api_request'       => 'App\Http\Requests\API',
@@ -93,7 +97,7 @@ return [
     |
     */
 
-    'templates'         => 'coreui-templates',
+    'templates'         => 'adminlte-templates',
 
     /*
     |--------------------------------------------------------------------------
@@ -134,6 +138,8 @@ return [
 
         'repository_pattern' => true,
 
+        'resources' => false,
+
         'excluded_fields' => ['id'], // Array of columns that doesn't required while creating module
     ],
 
@@ -164,7 +170,7 @@ return [
 
     'add_on' => [
 
-        'swagger'       => false,
+        'swagger'       => true,
 
         'tests'         => true,
 
